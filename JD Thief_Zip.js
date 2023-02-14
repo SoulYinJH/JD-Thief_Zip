@@ -99,15 +99,17 @@
 
     $(document).keyup(function (event) {
 
-        if (event.ctrlKey && event.keyCode === 81) {
+        if (event.ctrlKey && event.keyCode === 81) {    //KeyCode Q=81
             let ul = document.getElementsByClassName("lh")[0];
             let li = ul.getElementsByTagName("li");
             let li_list = new Array();
+            //获取所有主图链接
             for (var x of li) {
                 li_list.push(x.getElementsByTagName("img")[0].currentSrc);
             };
+            
+            //获取所有详情图
             let main_div_list = document.getElementsByClassName("detail-content clearfix")[0].getElementsByClassName("ssd-module-wrap")[0].getElementsByTagName("div");
-
             for (var i of main_div_list) {
                 let raw = window.getComputedStyle(i).backgroundImage
                 raw = raw.slice(5)
@@ -117,6 +119,7 @@
                 }
                 li_list.push(raw)
             }
+            //获取所有详情图（京东页面数据获取有的时候会改变，写两个保证获取）
             let raw=document.getElementsByClassName("ssd-module-wrap")
             raw=raw[raw.length-1].getElementsByTagName("div")
             for (var m of raw) {
@@ -132,7 +135,7 @@
 
 
 
-
+            //处理所有链接
             let final_list = new Array()
             for (let [name, url] of li_list.entries()) {
 
@@ -150,6 +153,7 @@
             }
             console.log(final_list)
             alert("下载请求已拉取，请耐心等待")
+            //图片打包下载
             saveImgZip(final_list)
 
         }
