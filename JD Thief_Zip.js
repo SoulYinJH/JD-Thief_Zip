@@ -2,7 +2,7 @@
 // @name         JD Thief_Zip
 // @namespace    http://tampermonkey.net/
 // @version      3.0
-// @description  try to take over the world!
+// @description  适用于京东JD.com图片抓取与下载打包。在商品详情页输入Ctrl+Q，即可触发爬取下载。
 // @author       Soul_Yin
 // @match       *://item.jd.com/*
 // @require      https://cdn.bootcdn.net/ajax/libs/jszip/3.10.0/jszip.min.js
