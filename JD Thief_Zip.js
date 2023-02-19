@@ -10,6 +10,7 @@
 // @require      https://cdnjs.cloudflare.com/ajax/libs/jquery/1.8.3/jquery.min.js
 // @icon         data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==
 // @grant        none
+// @license SoulYin
 // ==/UserScript==
 
 
