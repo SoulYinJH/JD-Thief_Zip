@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         JD Thief_Zip京东扒图
 // @namespace    http://tampermonkey.net/
-// @version      3.0
+// @version      3.1
 // @description  try to take over the world!
 // @author       Soul_Yin
 // @match       *://item.jd.com/*
