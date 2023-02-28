@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name         JD Thief_Zip
+// @name         JD Thief_Zip京东扒图
 // @namespace    http://tampermonkey.net/
 // @version      3.0
 // @description  try to take over the world!
